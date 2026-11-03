@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 * {
@@ -18,144 +18,130 @@
 }
 
 body {
-    background: #faf8f9;
-    color: #39343a;
+    background: #ffffff;
+    color: #444;
 }
 
 /* Navigation */
 nav {
-    background: #ffffff;
-    padding: 20px 9%;
+    padding: 20px 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: white;
     position: sticky;
     top: 0;
+    box-shadow: 0 2px 10px #eee;
     z-index: 100;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
 }
 
 nav h2 {
-    color: #a85f7c;
-    font-size: 23px;
-    font-weight: 600;
+    color: #b87591;
+    font-size: 22px;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    gap: 28px;
+    gap: 25px;
 }
 
 nav a {
     text-decoration: none;
     color: #555;
     font-size: 14px;
-    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #b66e8b;
+    color: #b87591;
 }
 
 /* Home */
 #home {
-    min-height: 520px;
-    background: linear-gradient(120deg,#f4e8ed,#f9f5f6,#eeeaf1);
+    min-height: 460px;
+    background: #f8eff3;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     text-align: center;
     padding: 60px 20px;
 }
 
-#home .tag {
-    color: #a85f7c;
-    letter-spacing: 3px;
-    font-size: 13px;
-    margin-bottom: 20px;
-}
-
 #home h1 {
-    font-size: 48px;
-    color: #70475b;
+    font-size: 45px;
+    color: #80566a;
     font-weight: 600;
 }
 
 #home h2 {
-    font-size: 25px;
-    margin: 15px 0;
+    font-size: 24px;
     font-weight: 400;
+    margin: 12px 0;
 }
 
 #home p {
-    color: #777;
-    margin-bottom: 30px;
+    color: #888;
+    margin-bottom: 25px;
 }
 
 .btn {
-    background: #a85f7c;
+    background: #b87591;
     color: white;
     text-decoration: none;
-    padding: 12px 32px;
+    padding: 11px 28px;
     border-radius: 5px;
-    transition: 0.3s;
+    font-size: 14px;
 }
 
 .btn:hover {
-    background: #81465e;
+    background: #925b73;
 }
 
-/* Sections */
+/* Section */
 section {
-    padding: 80px 10%;
+    padding: 75px 10%;
     text-align: center;
 }
 
 .heading {
-    font-size: 30px;
-    color: #8f536d;
+    color: #9b627b;
+    font-size: 28px;
     margin-bottom: 12px;
-    font-weight: 600;
 }
 
 .line {
-    width: 55px;
+    width: 45px;
     height: 3px;
-    background: #b97893;
-    margin: 0 auto 35px;
+    background: #c58ba4;
+    margin: 0 auto 30px;
 }
 
 /* About */
 .about-box {
-    max-width: 800px;
+    max-width: 750px;
     margin: auto;
-    background: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
     line-height: 2.2;
     color: #666;
 }
 
 /* Education */
 #education {
-    background: #f3edef;
+    background: #faf6f8;
 }
 
 .card {
     background: white;
-    padding: 35px;
     max-width: 650px;
     margin: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
-    line-height: 2.2;
+    padding: 30px;
+    border: 1px solid #f0e5eb;
+    border-radius: 8px;
+    line-height: 2;
 }
 
 .card h3 {
-    color: #9b5d77;
+    color: #9b627b;
     margin-bottom: 10px;
 }
 
@@ -164,57 +150,55 @@ section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 20px;
 }
 
 .work-card {
     background: white;
-    width: 260px;
-    padding: 35px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    width: 250px;
+    padding: 30px 20px;
+    border: 1px solid #f0e5eb;
+    border-radius: 8px;
     transition: 0.3s;
 }
 
 .work-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 5px 15px #eee;
 }
 
 .work-card h3 {
-    color: #9b5d77;
-    margin: 15px 0;
+    color: #9b627b;
+    margin-bottom: 10px;
 }
 
 .work-card p {
-    color: #777;
     font-size: 14px;
+    color: #888;
 }
 
 /* Contact */
 #contact {
-    background: #f3edef;
+    background: #faf6f8;
 }
 
 .contact-card {
-    max-width: 550px;
+    max-width: 500px;
     margin: auto;
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
     line-height: 2.5;
     color: #666;
 }
 
 /* Footer */
 footer {
-    background: #70475b;
+    background: #80566a;
     color: white;
     text-align: center;
-    padding: 22px;
+    padding: 18px;
     font-size: 13px;
 }
 
-/* Responsive */
+/* Mobile */
 @media(max-width:768px) {
     nav {
         flex-direction: column;
@@ -228,15 +212,11 @@ footer {
     }
 
     #home h1 {
-        font-size: 32px;
-    }
-
-    #home h2 {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     section {
-        padding: 60px 5%;
+        padding: 55px 6%;
     }
 }
 </style>
@@ -256,64 +236,62 @@ footer {
 </nav>
 
 <section id="home">
-    <div class="tag">WELCOME TO MY PORTFOLIO</div>
-    <h1>PORTFOLIO</h1>
+    <h1>MY PORTFOLIO</h1>
     <h2>แฟ้มสะสมผลงาน</h2>
-    <p>นำเสนอประวัติส่วนตัว ประวัติการศึกษา และผลงาน</p>
+    <p>ประวัติส่วนตัว ประวัติการศึกษา และผลงาน</p>
     <a href="#about" class="btn">เกี่ยวกับฉัน</a>
 </section>
 
 <section id="about">
-    <h1 class="heading">ABOUT ME</h1>
+    <h2 class="heading">ABOUT ME</h2>
     <div class="line"></div>
 
     <div class="about-box">
         <p>
             สวัสดีค่ะ ฉันเป็นนักเรียนแผนกวิชาเทคโนโลยีสารสนเทศ
-            มีความสนใจด้านเทคโนโลยีคอมพิวเตอร์
-            การออกแบบเว็บไซต์ และการเขียนโปรแกรม
-            มีความตั้งใจที่จะพัฒนาความรู้และทักษะของตนเอง
-            เพื่อนำไปประยุกต์ใช้ในอนาคต
+            มีความสนใจด้านคอมพิวเตอร์ การออกแบบเว็บไซต์
+            และการเขียนโปรแกรม ชอบเรียนรู้สิ่งใหม่ ๆ
+            และพัฒนาความสามารถของตนเองอยู่เสมอ
         </p>
     </div>
 </section>
 
 <section id="education">
-    <h1 class="heading">EDUCATION</h1>
+    <h2 class="heading">EDUCATION</h2>
     <div class="line"></div>
 
     <div class="card">
         <h3>ประวัติการศึกษา</h3>
         <p>ระดับประกาศนียบัตรวิชาชีพ (ปวช.)</p>
         <p>สาขาวิชาเทคโนโลยีสารสนเทศ</p>
-        <p>ระดับชั้น ปวช.2</p>
+        <p>กำลังศึกษาอยู่ชั้น ปวช.2</p>
     </div>
 </section>
 
 <section id="works">
-    <h1 class="heading">MY WORKS</h1>
+    <h2 class="heading">MY WORKS</h2>
     <div class="line"></div>
 
     <div class="container">
         <div class="work-card">
             <h3>Website Design</h3>
-            <p>ผลงานการออกแบบและพัฒนาเว็บไซต์</p>
+            <p>การออกแบบและพัฒนาเว็บไซต์</p>
         </div>
 
         <div class="work-card">
             <h3>Graphic Design</h3>
-            <p>ผลงานการออกแบบสื่อและกราฟิก</p>
+            <p>การออกแบบกราฟิกและโปสเตอร์</p>
         </div>
 
         <div class="work-card">
             <h3>Programming</h3>
-            <p>ผลงานการเขียนโปรแกรม</p>
+            <p>การเขียนโปรแกรมคอมพิวเตอร์</p>
         </div>
     </div>
 </section>
 
 <section id="contact">
-    <h1 class="heading">CONTACT ME</h1>
+    <h2 class="heading">CONTACT</h2>
     <div class="line"></div>
 
     <div class="contact-card">
@@ -324,12 +302,14 @@ footer {
 </section>
 
 <footer>
-    <p>© 2026 MY PORTFOLIO | ALL RIGHTS RESERVED</p>
+    <p>© 2026 My Portfolio</p>
 </footer>
 
 <script>
-window.addEventListener("load", function() {
-    console.log("Portfolio Website Ready");
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function() {
+        console.log('Navigating to ' + this.textContent);
+    });
 });
 </script>
 
