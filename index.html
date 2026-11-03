@@ -1,12 +1,68 @@
+
 <!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio ♡</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>My Portfolio ♡</h1>
+    <nav>
+        <h2>My Portfolio ♡</h2>
+        <ul>
+            <li><a href="#home">หน้าแรก</a></li>
+            <li><a href="#about">เกี่ยวกับฉัน</a></li>
+            <li><a href="#education">การศึกษา</a></li>
+            <li><a href="#works">ผลงาน</a></li>
+            <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+    </nav>
 
+    <section id="home">
+        <h1>WELCOME TO MY PORTFOLIO</h1>
+        <h2>สวัสดีค่ะ ยินดีต้อนรับ ♡</h2>
+        <p>เว็บไซต์แฟ้มสะสมผลงานของฉัน</p>
+        <button onclick="showMessage()">คลิกเลย ♡</button>
+    </section>
+
+    <section id="about">
+        <h1>ABOUT ME</h1>
+        <p>สวัสดีค่ะ ฉันเป็นนักเรียนแผนกเทคโนโลยีสารสนเทศ</p>
+        <p>ฉันชอบเรียนรู้เทคโนโลยีและการออกแบบเว็บไซต์</p>
+    </section>
+
+    <section id="education">
+        <h1>EDUCATION</h1>
+        <div class="card">
+            <h3>ประวัติการศึกษา 🎓</h3>
+            <p>ระดับประกาศนียบัตรวิชาชีพ (ปวช.)</p>
+            <p>สาขาเทคโนโลยีสารสนเทศ</p>
+            <p>กำลังศึกษาอยู่ชั้น ปวช.2</p>
+        </div>
+    </section>
+
+    <section id="works">
+        <h1>MY WORKS</h1>
+        <div class="container">
+            <div class="card">💻<h3>Web Design</h3><p>ออกแบบเว็บไซต์</p></div>
+            <div class="card">🎨<h3>Graphic Design</h3><p>ออกแบบกราฟิก</p></div>
+            <div class="card">🌷<h3>Programming</h3><p>เขียนโปรแกรม</p></div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>CONTACT ME</h1>
+        <p>Instagram : khunn_np</p>
+        <p>Facebook : My Facebook</p>
+        <p>Email : nattayakun11e@gmail.com</p>
+    </section>
+
+    <footer>
+        <p>© 2026 My Portfolio ♡</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
