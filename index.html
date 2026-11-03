@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio ♡</title>
+<title>My Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -18,152 +18,145 @@
 }
 
 body {
-    background: #fff7fb;
-    color: #704b61;
+    background: #faf8f9;
+    color: #39343a;
 }
 
-/* เมนู */
+/* Navigation */
 nav {
-    background: white;
-    padding: 18px 8%;
+    background: #ffffff;
+    padding: 20px 9%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 3px 15px #efd5e3;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
 }
 
 nav h2 {
-    color: #e77ba8;
-    font-size: 25px;
+    color: #a85f7c;
+    font-size: 23px;
+    font-weight: 600;
 }
 
 nav ul {
     display: flex;
-    gap: 22px;
     list-style: none;
+    gap: 28px;
 }
 
 nav a {
-    color: #80566c;
     text-decoration: none;
+    color: #555;
     font-size: 14px;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #e77ba8;
+    color: #b66e8b;
 }
 
-/* หน้าแรก */
+/* Home */
 #home {
-    min-height: 570px;
-    background: linear-gradient(135deg,#ffdce9,#f0e1ff,#e4f3ff);
+    min-height: 520px;
+    background: linear-gradient(120deg,#f4e8ed,#f9f5f6,#eeeaf1);
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     flex-direction: column;
-    padding: 50px 20px;
+    text-align: center;
+    padding: 60px 20px;
 }
 
-#home .small {
-    background: white;
-    padding: 10px 25px;
-    border-radius: 30px;
-    color: #d875a0;
-    margin-bottom: 25px;
+#home .tag {
+    color: #a85f7c;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 20px;
 }
 
 #home h1 {
     font-size: 48px;
-    color: #d96f9e;
-    margin-bottom: 15px;
+    color: #70475b;
+    font-weight: 600;
 }
 
 #home h2 {
-    font-size: 29px;
-    margin-bottom: 15px;
+    font-size: 25px;
+    margin: 15px 0;
+    font-weight: 400;
 }
 
 #home p {
-    color: #88677b;
+    color: #777;
     margin-bottom: 30px;
 }
 
 .btn {
-    background: linear-gradient(45deg,#ed8bb5,#c69ae9);
+    background: #a85f7c;
     color: white;
-    padding: 13px 35px;
-    border-radius: 30px;
     text-decoration: none;
-    box-shadow: 0 5px 15px #e8b8d0;
-    transition: .3s;
+    padding: 12px 32px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    transform: translateY(-5px);
+    background: #81465e;
 }
 
-/* ส่วนเนื้อหา */
+/* Sections */
 section {
-    padding: 85px 10%;
+    padding: 80px 10%;
     text-align: center;
 }
 
 .heading {
-    color: #d96f9e;
-    font-size: 35px;
-    margin-bottom: 40px;
-}
-
-.subtitle {
-    color: #a17d91;
-    margin-top: -25px;
-    margin-bottom: 30px;
-}
-
-/* การ์ด */
-.card {
-    background: white;
-    padding: 35px;
-    border-radius: 25px;
-    box-shadow: 0 8px 25px #f0dce7;
-    transition: .3s;
-    line-height: 2;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px #e8bfd4;
-}
-
-.card h3 {
-    color: #d878a5;
+    font-size: 30px;
+    color: #8f536d;
     margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.line {
+    width: 55px;
+    height: 3px;
+    background: #b97893;
+    margin: 0 auto 35px;
 }
 
 /* About */
 .about-box {
-    max-width: 750px;
+    max-width: 800px;
     margin: auto;
     background: white;
     padding: 40px;
-    border-radius: 25px;
-    box-shadow: 0 8px 25px #f0dce7;
-    line-height: 2.3;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    line-height: 2.2;
+    color: #666;
 }
 
 /* Education */
 #education {
-    background: linear-gradient(135deg,#fff0f7,#f4edff);
+    background: #f3edef;
 }
 
-.education-card {
+.card {
+    background: white;
+    padding: 35px;
     max-width: 650px;
     margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    line-height: 2.2;
+}
+
+.card h3 {
+    color: #9b5d77;
+    margin-bottom: 10px;
 }
 
 /* Works */
@@ -175,64 +168,53 @@ section {
 }
 
 .work-card {
+    background: white;
     width: 260px;
     padding: 35px 20px;
-    background: white;
-    border-radius: 25px;
-    box-shadow: 0 8px 25px #f0dce7;
-    transition: .3s;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
 }
 
 .work-card:hover {
-    transform: translateY(-10px);
-    background: #fff0f7;
-}
-
-.work-card .emoji {
-    font-size: 45px;
+    transform: translateY(-5px);
 }
 
 .work-card h3 {
-    color: #d878a5;
+    color: #9b5d77;
     margin: 15px 0;
+}
+
+.work-card p {
+    color: #777;
+    font-size: 14px;
 }
 
 /* Contact */
 #contact {
-    background: linear-gradient(135deg,#ffeaf3,#f0e7ff);
+    background: #f3edef;
 }
 
 .contact-card {
     max-width: 550px;
     margin: auto;
-}
-
-.contact-card p {
-    margin: 12px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    line-height: 2.5;
+    color: #666;
 }
 
 /* Footer */
 footer {
-    background: #e98bb4;
+    background: #70475b;
     color: white;
     text-align: center;
-    padding: 25px;
+    padding: 22px;
+    font-size: 13px;
 }
 
-/* ปุ่มกลับด้านบน */
-.top {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    background: #e98bb4;
-    color: white;
-    text-decoration: none;
-    padding: 12px 17px;
-    border-radius: 50%;
-    box-shadow: 0 4px 12px #e6b6ce;
-}
-
-/* มือถือ */
+/* Responsive */
 @media(max-width:768px) {
     nav {
         flex-direction: column;
@@ -242,15 +224,15 @@ footer {
     nav ul {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 12px;
+        gap: 15px;
     }
 
     #home h1 {
-        font-size: 30px;
+        font-size: 32px;
     }
 
     #home h2 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     section {
@@ -263,7 +245,7 @@ footer {
 <body>
 
 <nav>
-    <h2>My Portfolio ♡</h2>
+    <h2>MY PORTFOLIO</h2>
     <ul>
         <li><a href="#home">หน้าแรก</a></li>
         <li><a href="#about">เกี่ยวกับฉัน</a></li>
@@ -274,85 +256,81 @@ footer {
 </nav>
 
 <section id="home">
-    <div class="small">♡ WELCOME TO MY WORLD ♡</div>
-    <h1>MY PORTFOLIO</h1>
-    <h2>สวัสดีค่ะ ยินดีต้อนรับ 🌷</h2>
-    <p>แฟ้มสะสมผลงานและเรื่องราวของฉัน</p>
-    <a href="#about" class="btn">GET TO KNOW ME ♡</a>
+    <div class="tag">WELCOME TO MY PORTFOLIO</div>
+    <h1>PORTFOLIO</h1>
+    <h2>แฟ้มสะสมผลงาน</h2>
+    <p>นำเสนอประวัติส่วนตัว ประวัติการศึกษา และผลงาน</p>
+    <a href="#about" class="btn">เกี่ยวกับฉัน</a>
 </section>
 
 <section id="about">
-    <h1 class="heading">ABOUT ME 🌸</h1>
+    <h1 class="heading">ABOUT ME</h1>
+    <div class="line"></div>
+
     <div class="about-box">
-        <h3>สวัสดีค่ะ ยินดีที่ได้รู้จัก ♡</h3>
-        <p>ฉันเป็นนักเรียนแผนกวิชาเทคโนโลยีสารสนเทศ</p>
-        <p>ฉันชอบเรียนรู้เทคโนโลยี การออกแบบเว็บไซต์</p>
-        <p>และการเขียนโปรแกรม พร้อมเรียนรู้สิ่งใหม่ ๆ อยู่เสมอ</p>
-        <p>ขอบคุณที่เข้ามาเยี่ยมชมเว็บไซต์ของฉันนะคะ 💗</p>
+        <p>
+            สวัสดีค่ะ ฉันเป็นนักเรียนแผนกวิชาเทคโนโลยีสารสนเทศ
+            มีความสนใจด้านเทคโนโลยีคอมพิวเตอร์
+            การออกแบบเว็บไซต์ และการเขียนโปรแกรม
+            มีความตั้งใจที่จะพัฒนาความรู้และทักษะของตนเอง
+            เพื่อนำไปประยุกต์ใช้ในอนาคต
+        </p>
     </div>
 </section>
 
 <section id="education">
-    <h1 class="heading">EDUCATION 🎓</h1>
-    <p class="subtitle">เส้นทางการศึกษาของฉัน</p>
+    <h1 class="heading">EDUCATION</h1>
+    <div class="line"></div>
 
-    <div class="card education-card">
-        <h3>🌷 ประวัติการศึกษา</h3>
+    <div class="card">
+        <h3>ประวัติการศึกษา</h3>
         <p>ระดับประกาศนียบัตรวิชาชีพ (ปวช.)</p>
         <p>สาขาวิชาเทคโนโลยีสารสนเทศ</p>
-        <p>กำลังศึกษาอยู่ชั้น ปวช.2</p>
+        <p>ระดับชั้น ปวช.2</p>
     </div>
 </section>
 
 <section id="works">
-    <h1 class="heading">MY WORKS ✨</h1>
-    <p class="subtitle">ผลงานที่ฉันได้สร้างสรรค์</p>
+    <h1 class="heading">MY WORKS</h1>
+    <div class="line"></div>
 
     <div class="container">
         <div class="work-card">
-            <div class="emoji">💻</div>
-            <h3>Web Design</h3>
-            <p>การออกแบบและสร้างเว็บไซต์</p>
+            <h3>Website Design</h3>
+            <p>ผลงานการออกแบบและพัฒนาเว็บไซต์</p>
         </div>
 
         <div class="work-card">
-            <div class="emoji">🎨</div>
             <h3>Graphic Design</h3>
-            <p>การออกแบบกราฟิกและโปสเตอร์</p>
+            <p>ผลงานการออกแบบสื่อและกราฟิก</p>
         </div>
 
         <div class="work-card">
-            <div class="emoji">🌷</div>
             <h3>Programming</h3>
-            <p>การเขียนโปรแกรมและพัฒนาเว็บไซต์</p>
+            <p>ผลงานการเขียนโปรแกรม</p>
         </div>
     </div>
 </section>
 
 <section id="contact">
-    <h1 class="heading">CONTACT ME 💌</h1>
+    <h1 class="heading">CONTACT ME</h1>
+    <div class="line"></div>
 
-    <div class="card contact-card">
-        <p>📷 Instagram : khunn_np</p>
-        <p>💗 Facebook : My Facebook</p>
-        <p>✉️ Email : nattayakun11e@gmail.com</p>
+    <div class="contact-card">
+        <p>Instagram : khunn_np</p>
+        <p>Facebook : My Facebook</p>
+        <p>Email : nattayakun11e@gmail.com</p>
     </div>
 </section>
 
 <footer>
-    <p>Made with ♡ by Me</p>
-    <p>© 2026 My Portfolio</p>
+    <p>© 2026 MY PORTFOLIO | ALL RIGHTS RESERVED</p>
 </footer>
 
-<a href="#home" class="top">↑</a>
-
 <script>
-function welcome() {
-    alert("ยินดีต้อนรับเข้าสู่ My Portfolio ♡");
-}
-
-console.log("Welcome to My Portfolio!");
-
+window.addEventListener("load", function() {
+    console.log("Portfolio Website Ready");
+});
 </script>
 
 </body>
