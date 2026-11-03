@@ -18,11 +18,11 @@
 }
 
 body {
-    background: #ffffff;
+    background: #fff;
     color: #444;
 }
 
-/* Navigation */
+/* Navbar */
 nav {
     padding: 20px 10%;
     display: flex;
@@ -36,7 +36,7 @@ nav {
 }
 
 nav h2 {
-    color: #b87591;
+    color: #ad718b;
     font-size: 22px;
 }
 
@@ -53,52 +53,79 @@ nav a {
 }
 
 nav a:hover {
-    color: #b87591;
+    color: #ad718b;
 }
 
 /* Home */
 #home {
-    min-height: 460px;
-    background: #f8eff3;
+    min-height: 530px;
+    background: #f8f1f4;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 60px 20px;
+    gap: 70px;
+    padding: 60px 10%;
 }
 
-#home h1 {
-    font-size: 45px;
-    color: #80566a;
-    font-weight: 600;
+.home-text {
+    flex: 1;
 }
 
-#home h2 {
-    font-size: 24px;
+.home-text .tag {
+    color: #ad718b;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.home-text h1 {
+    font-size: 43px;
+    color: #795568;
+}
+
+.home-text h2 {
+    font-size: 25px;
     font-weight: 400;
-    margin: 12px 0;
+    margin: 10px 0;
 }
 
-#home p {
-    color: #888;
+.home-text p {
+    color: #777;
     margin-bottom: 25px;
 }
 
 .btn {
-    background: #b87591;
+    display: inline-block;
+    background: #ad718b;
     color: white;
     text-decoration: none;
     padding: 11px 28px;
     border-radius: 5px;
-    font-size: 14px;
 }
 
 .btn:hover {
-    background: #925b73;
+    background: #89556d;
 }
 
-/* Section */
+/* Profile Image */
+.profile {
+    width: 280px;
+    height: 350px;
+    flex-shrink: 0;
+    border: 8px solid white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #dfcbd5;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Sections */
 section {
     padding: 75px 10%;
     text-align: center;
@@ -142,7 +169,6 @@ section {
 
 .card h3 {
     color: #9b627b;
-    margin-bottom: 10px;
 }
 
 /* Works */
@@ -159,7 +185,7 @@ section {
     padding: 30px 20px;
     border: 1px solid #f0e5eb;
     border-radius: 8px;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .work-card:hover {
@@ -170,11 +196,6 @@ section {
 .work-card h3 {
     color: #9b627b;
     margin-bottom: 10px;
-}
-
-.work-card p {
-    font-size: 14px;
-    color: #888;
 }
 
 /* Contact */
@@ -198,7 +219,7 @@ footer {
     font-size: 13px;
 }
 
-/* Mobile */
+/* Responsive */
 @media(max-width:768px) {
     nav {
         flex-direction: column;
@@ -211,8 +232,19 @@ footer {
         gap: 15px;
     }
 
-    #home h1 {
-        font-size: 30px;
+    #home {
+        flex-direction: column-reverse;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .profile {
+        width: 220px;
+        height: 280px;
+    }
+
+    .home-text h1 {
+        font-size: 32px;
     }
 
     section {
@@ -235,13 +267,24 @@ footer {
     </ul>
 </nav>
 
+<!-- HOME -->
 <section id="home">
-    <h1>MY PORTFOLIO</h1>
-    <h2>แฟ้มสะสมผลงาน</h2>
-    <p>ประวัติส่วนตัว ประวัติการศึกษา และผลงาน</p>
-    <a href="#about" class="btn">เกี่ยวกับฉัน</a>
+
+    <div class="home-text">
+        <div class="tag">WELCOME TO MY PORTFOLIO</div>
+        <h1>MY PORTFOLIO</h1>
+        <h2>สวัสดีค่ะ ฉันชื่อ คุณ</h2>
+        <p>นักเรียนสาขาวิชาเทคโนโลยีสารสนเทศ</p>
+        <a href="#about" class="btn">รู้จักฉันเพิ่มเติม</a>
+    </div>
+
+    <div class="profile">
+        <img src="profile.jpg" alt="รูปโปรไฟล์ของฉัน">
+    </div>
+
 </section>
 
+<!-- ABOUT -->
 <section id="about">
     <h2 class="heading">ABOUT ME</h2>
     <div class="line"></div>
@@ -256,6 +299,7 @@ footer {
     </div>
 </section>
 
+<!-- EDUCATION -->
 <section id="education">
     <h2 class="heading">EDUCATION</h2>
     <div class="line"></div>
@@ -268,6 +312,7 @@ footer {
     </div>
 </section>
 
+<!-- WORKS -->
 <section id="works">
     <h2 class="heading">MY WORKS</h2>
     <div class="line"></div>
@@ -290,8 +335,9 @@ footer {
     </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
-    <h2 class="heading">CONTACT</h2>
+    <h2 class="heading">CONTACT ME</h2>
     <div class="line"></div>
 
     <div class="contact-card">
@@ -302,15 +348,11 @@ footer {
 </section>
 
 <footer>
-    <p>© 2026 My Portfolio</p>
+    <p>© 2026 MY PORTFOLIO</p>
 </footer>
 
 <script>
-document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', function() {
-        console.log('Navigating to ' + this.textContent);
-    });
-});
+console.log("Welcome to My Portfolio");
 </script>
 
 </body>
